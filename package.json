@@ -22,6 +22,9 @@
     "fastify-cli": "^2.12.0"
   },
   "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
     "tap": "^15.0.9"
   }
 }
