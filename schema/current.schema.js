@@ -74,92 +74,114 @@ schemaCurrent.getCurrent = {
         current: {
           type: 'object',
           properties: {
-            dt: {
-              type: 'integer',
-              format: 'int32',
-              example: '1621999032',
-            },
-            sunrise: {
-              type: 'integer',
-              format: 'int32',
-              example: '1622025776',
-            },
-            sunset: {
-              type: 'integer',
-              format: 'int32',
-              example: '1622062639',
-            },
-            temp: {
+            lat: {
               type: 'number',
-              example: '9.47',
+              example: '-31.3436',
             },
-            feels_like: {
+            lon: {
               type: 'number',
-              example: '9.47',
+              example: '-59.4464',
             },
-            pressure: {
+            timezone: {
+              type: 'string',
+              example: 'America/Argentina/Cordoba',
+            },
+            timezone_offset: {
               type: 'integer',
               format: 'int32',
-              example: '1021',
+              example: '-10800',
             },
-            humidity: {
-              type: 'integer',
-              format: 'int32',
-              example: '91',
-            },
-            dew_point: {
-              type: 'number',
-              example: '8.08',
-            },
-            uvi: {
-              type: 'integer',
-              format: 'int32',
-              example: '0',
-            },
-            clouds: {
-              type: 'integer',
-              format: 'int32',
-              example: '0',
-            },
-            visibility: {
-              type: 'integer',
-              format: 'int32',
-              example: '10000',
-            },
-            wind_speed: {
-              type: 'number',
-              example: '0.98',
-            },
-            wind_deg: {
-              type: 'integer',
-              format: 'int32',
-              example: '347',
-            },
-            wind_gust: {
-              type: 'number',
-              example: '1.01',
-            },
-            weather: {
-              type: 'array',
-              items: {
-                type: 'object',
-                properties: {
-                  id: {
-                    type: 'integer',
-                    format: 'int32',
-                    example: '800',
-                  },
-                  main: {
-                    type: 'string',
-                    example: 'Clear',
-                  },
-                  description: {
-                    type: 'string',
-                    example: 'cielo claro',
-                  },
-                  icon: {
-                    type: 'string',
-                    example: '01n',
+            current: {
+              type: 'object',
+              properties: {
+                dt: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '1622082533',
+                },
+                sunrise: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '1622025922',
+                },
+                sunset: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '1622063081',
+                },
+                temp: {
+                  type: 'number',
+                  example: '9.95',
+                },
+                feels_like: {
+                  type: 'number',
+                  example: '9.52',
+                },
+                pressure: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '1016',
+                },
+                humidity: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '78',
+                },
+                dew_point: {
+                  type: 'number',
+                  example: '6.3',
+                },
+                uvi: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '0',
+                },
+                clouds: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '1',
+                },
+                visibility: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '10000',
+                },
+                wind_speed: {
+                  type: 'number',
+                  example: '1.57',
+                },
+                wind_deg: {
+                  type: 'integer',
+                  format: 'int32',
+                  example: '352',
+                },
+                wind_gust: {
+                  type: 'number',
+                  example: '1.69',
+                },
+                weather: {
+                  type: 'array',
+                  items: {
+                    type: 'object',
+                    properties: {
+                      id: {
+                        type: 'integer',
+                        format: 'int32',
+                        example: '800',
+                      },
+                      main: {
+                        type: 'string',
+                        example: 'Clear',
+                      },
+                      description: {
+                        type: 'string',
+                        example: 'cielo claro',
+                      },
+                      icon: {
+                        type: 'string',
+                        example: '01n',
+                      },
+                    },
                   },
                 },
               },
