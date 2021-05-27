@@ -26,12 +26,12 @@ function getTiempoActual(latitud, longitud) {
   });
 }
 
-function getTiempoDias(latitud, logitud) {
+function getTiempoDias(latitud, longitud) {
   // eslint-disable-next-line no-async-promise-executor
   return new Promise(async (resolve) => {
     const tiempoConfig = {
       latitud,
-      logitud,
+      longitud,
       apiID: 'a63072e3e1e01801c117e4a397ba5302',
       exclude: 'hourly,minutely,current',
       units: 'metric',
