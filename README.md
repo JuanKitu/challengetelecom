@@ -8,11 +8,11 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Que cosas necesitas para instalar el software y como instalarlas._
 _En primer lugar necesitamos instalar los siguientes programas:_
 
 * [nodeJS v14.17.0 (Recomendada)](https://nodejs.org/dist/v14.17.0/node-v14.17.0-x64.msi)
-_La instalacion es exclusiva de windows x64 bits_
+_La instalacion es exclusiva de windows x64 bits._
 _Una vez instalado nodeJS, se requiere acceder a una consola para instalar fastify CLI (esta instalacion puede ser optativa) con el siguiente comando:_
 
 ```
@@ -51,15 +51,16 @@ npm run dev
 ```
 ## Construido con 🛠️
 
-* [nodeJS](https://nodejs.org/es/docs/) - El entorno de ejecucion para JavaSript.
+* [nodeJS](https://nodejs.org/es/docs/) - El entorno de ejecucion para JavaScript.
 * [fastify](https://www.fastify.io/) - El framework web usado.
 * [fastify-CLI](https://github.com/fastify/fastify-cli) - Es el CLI de fastify usado para estandarizar mejor el proyecto y ejecutarlo
 * [node-fetch](https://github.com/node-fetch/node-fetch) - Un módulo ligero que lleva window.fetch a Node.js, usado para comunicarse con APIs externas.
 * [Node Tap](https://node-tap.org/) - Es una libreria para hacer los test unitarios pedidos en el challenge
 * [fastify-swagger](https://github.com/fastify/fastify-swagger) - Un complemento de Fastify para brindar una IU de Swagger, utilizando esquemas Swagger (OpenAPI v2)  generados automáticamente a partir de sus esquemas de ruta.
-* [ESlint](https://eslint.org/) - Es una libreria usada para formatear el codigo en algun estandar, en este proyecto se utilizo el de AIRNBN
+* [ESlint](https://eslint.org/) - Es una libreria usada para formatear el codigo en algun estandar, en este proyecto se utilizo el de AIRBNB
 * [fastify-autoload](https://github.com/fastify/fastify-autoload) - Es un plugin de fastify que se encuentran en un directorio y configura automáticamente las rutas que coinciden con la estructura de la carpeta.
 * [fastify-plugin](https://github.com/fastify/fastify-plugin) - Brinda contexto compartido a los diferentes complementos creados, viene incluido con el init del cli de fastify
 * [fastify-sensible](https://github.com/fastify/fastify-sensible) - Este complemento agrega algunas utilidades a la instancia de Fastify, consulte la sección API para obtener más información.
 
-* **Juan Manuel Santa Cruz** - [JuanKitu](https://gitlab.com/JuanKitu).
+## Autor ✒️
+* **Juan Manuel Santa Cruz** - [JuanKitu](https://github.com/JuanKitu).
