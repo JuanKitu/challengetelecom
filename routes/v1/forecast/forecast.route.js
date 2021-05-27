@@ -6,4 +6,8 @@ module.exports = async (fastify) => {
     schema: schemaForecast.getForecast,
     handler: controller.getForecast,
   });
+  fastify.get('/:city', {
+    schema: schemaForecast.getForecastCity,
+    handler: controller.getForecastCity,
+  });
 };

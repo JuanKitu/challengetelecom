@@ -30,7 +30,6 @@ controller.getForecastCity = async (request, reply) => {
   if (ciudad) {
     await getTiempoDias(ciudad.latitud, ciudad.longitud).then(async (geo) => {
       await dataLatLon(ciudad.latitud, ciudad.longitud).then((find) => {
-        console.log('datos del find: ', find);
         reply.status(200).send({
           err: false,
           city: find,
