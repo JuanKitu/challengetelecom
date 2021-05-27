@@ -11,7 +11,7 @@
     },
     "scripts": {
         "test": "tap \"test/**/*.test.js\"",
-        "start": "fastify start -l info -p -a 192.168.0.116 3000 app.js",
+        "start": "fastify start -l info -a 192.168.0.116 -p 3000 app.js",
         "dev": "fastify start -w -l info -p 3000 -a 192.168.0.116 -P app.js",
         "lint": "eslint .",
         "lint-fix": "eslint . --fix"
