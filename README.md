@@ -50,7 +50,7 @@ _Si quiere correr el programa en modo desarrolador (la diferencia es que si dete
 npm run dev
 ```
 ## Testeando el proyecto 🔬
-_Para hacer un testing completo del proyecto solo es necesario usar el siguiente comando: _
+_Para hacer un testing completo del proyecto solo es necesario usar el siguiente comando:_
 ```
 npm run test
 ```
