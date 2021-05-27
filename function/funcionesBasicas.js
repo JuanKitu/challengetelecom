@@ -1,5 +1,31 @@
 const fetch = require('node-fetch');
 
+const ubicacionCiudad = [{
+  id: 1,
+  latitud: -34.9214,
+  longitud: -57.9544,
+  nombre: 'La Plata',
+},
+{
+  id: 2,
+  latitud: -31.3436,
+  longitud: -59.4464,
+  nombre: 'Bovril',
+},
+{
+  id: 3,
+  latitud: 59.3328,
+  longitud: 18.0645,
+  nombre: 'Estocolmo',
+},
+{
+  id: 4,
+  latitud: 51.2256,
+  longitud: 6.78278,
+  nombre: 'Dusseldorf',
+},
+];
+
 function dataIp(ip) {
   // eslint-disable-next-line no-async-promise-executor
   return new Promise(async (resolve) => {
@@ -44,4 +70,15 @@ function getTiempoDias(latitud, longitud) {
   });
 }
 
-module.exports = { dataIp, getTiempoActual, getTiempoDias };
+function getCity(city) {
+  let ciudadEncontrada;
+  ubicacionCiudad.forEach((ciudad) => {
+    if (ciudad.id === parseInt(city, 10)) {
+      ciudadEncontrada = ciudad;
+    }
+  });
+  return ciudadEncontrada;
+}
+module.exports = {
+  dataIp, getTiempoActual, getTiempoDias, getCity,
+};
