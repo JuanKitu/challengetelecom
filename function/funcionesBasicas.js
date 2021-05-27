@@ -65,6 +65,11 @@ function getTiempoDias(latitud, longitud) {
     };
     const tiempo = `https://api.openweathermap.org/data/2.5/onecall?lat=${tiempoConfig.latitud}&lon=${tiempoConfig.longitud}&exclude=${tiempoConfig.exclude}&units=${tiempoConfig.units}&lang=es&appid=${tiempoConfig.apiID}`;
     await fetch(tiempo).then((res) => res.json()).then((geo) => {
+      geo.daily.forEach((undayli, index) => {
+        if (index > 4) {
+          geo.daily.splice(index, index);
+        }
+      });
       resolve(geo);
     });
   });
