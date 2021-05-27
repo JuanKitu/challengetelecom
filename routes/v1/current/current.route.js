@@ -6,4 +6,8 @@ module.exports = async (fastify) => {
     schema: schemaCurrent.getCurrent,
     handler: controller.getCurrent,
   });
+  fastify.get('/:city', {
+    schema: schemaCurrent.getCurrentCity,
+    handler: controller.getCurrentCity,
+  });
 };
