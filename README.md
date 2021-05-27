@@ -39,6 +39,7 @@ npm install fastify-cli
 
 
 _Por ultimo en el archivo [package.json](https://github.com/JuanKitu/challengetelecom/blob/develop/package.json) en los scripts **"start"** y **"dev"** en el segmento **-a 192.168.0.116** debe ser borrado para usar como IP del server el **localhost** o agregar el IP deseado_
+_Hacer lo mismo en el [app.js](https://github.com/JuanKitu/challengetelecom/blob/develop/app.js) en la linea 16  en la json de configuracion de swagger_
 ## Ejecutando el proyecto ⚡
 
 _Para iniciar el proyecto solamente es necesario el siguiente comando:_
