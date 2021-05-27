@@ -79,6 +79,18 @@ function getCity(city) {
   });
   return ciudadEncontrada;
 }
+
+function dataLatLon(latitud, longitud) {
+  return new Promise((resolve) => {
+    const key = '7decc42283ff1023ca30f55c536592b9';
+    const ipApi = `http://api.positionstack.com/v1/reverse?access_key=${key}&query=${latitud},${longitud}`;
+    fetch(ipApi).then((res) => res.json()).then((data) => resolve(data.data[0]));
+  });
+}
 module.exports = {
-  dataIp, getTiempoActual, getTiempoDias, getCity,
+  dataIp,
+  getTiempoActual,
+  getTiempoDias,
+  getCity,
+  dataLatLon,
 };
